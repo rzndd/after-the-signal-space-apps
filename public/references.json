@@ -1,0 +1,1299 @@
+{
+  "schemaVersion": 1,
+  "project": "After the Signal",
+  "reviewDate": "2026-11-15",
+  "nasaResources": [
+    {
+      "name": "NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/",
+      "use": "Curated spacecraft and mission history. A challenge-listed resource in the challenge text supplied by the project owner."
+    },
+    {
+      "name": "NASA Image and Video Library API",
+      "url": "https://images.nasa.gov/docs/images.nasa.gov_api_docs.pdf",
+      "use": "Image selection, image identifiers, captions and attribution. Local documentary assets avoid initial API delays."
+    },
+    {
+      "name": "JPL Horizons API",
+      "url": "https://ssd-api.jpl.nasa.gov/doc/horizons.html",
+      "use": "Dated trajectory and light-time model calculations. Not live radio telemetry."
+    },
+    {
+      "name": "InSight weather API documentation",
+      "url": "https://api.nasa.gov/assets/insight/InSight%20Weather%20API%20Documentation.pdf",
+      "use": "Optional archival Mars weather feed. Unavailability triggers labelled reference data."
+    },
+    {
+      "name": "NASA SVS CGI Moon Kit",
+      "url": "https://svs.gsfc.nasa.gov/4720/",
+      "use": "LRO/LROC Moon mosaic behind interactive flags."
+    },
+    {
+      "name": "NASA Mars Trek",
+      "url": "https://trek.nasa.gov/tiles/apidoc/trekAPI.html?body=mars",
+      "use": "NASA/USGS Viking MDIM 2.1 global Mars mosaic."
+    },
+    {
+      "name": "Mars map capabilities",
+      "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_Viking_MDIM21_ClrMosaic_global_232m/1.0.0/WMTSCapabilities.xml",
+      "use": "Provenance and geographic tile coverage of the Mars background."
+    },
+    {
+      "name": "NASA images and media guidance",
+      "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "use": "Attribution and third-party rights guidance. NASA endorsement is not claimed."
+    }
+  ],
+  "missions": [
+    {
+      "id": "apollo-11-eagle",
+      "name": "Eagle (Apollo 11 descent stage)",
+      "sources": [
+        {
+          "label": "NASA NSSDCA – Master Catalog",
+          "url": "https://nssdc.gsfc.nasa.gov/"
+        },
+        {
+          "label": "NSSDCA – Apollo 11 Lunar Module",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C"
+        }
+      ],
+      "documentarySource": {
+        "label": "Apollo 11 lunar module record",
+        "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C"
+      }
+    },
+    {
+      "id": "lunar-roving-vehicle",
+      "name": "Lunar Roving Vehicles (Apollo 15, 16, 17)",
+      "sources": [
+        {
+          "label": "NASA NSSDCA – Master Catalog",
+          "url": "https://nssdc.gsfc.nasa.gov/"
+        },
+        {
+          "label": "NASA – Apollo Lunar Roving Vehicle",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo_lrv.html"
+        }
+      ],
+      "documentarySource": {
+        "label": "NASA lunar rover mission record",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo_lrv.html"
+      }
+    },
+    {
+      "id": "viking-1",
+      "name": "Viking 1 Lander",
+      "sources": [
+        {
+          "label": "NASA NSSDCA – Master Catalog",
+          "url": "https://nssdc.gsfc.nasa.gov/"
+        },
+        {
+          "label": "NASA Science – Viking 1",
+          "url": "https://science.nasa.gov/mission/viking-1/"
+        },
+        {
+          "label": "NASA Astrobiology – Viking results revisited",
+          "url": "https://astrobiology.nasa.gov/news/viking-results-revisited/"
+        },
+        {
+          "label": "NSSDCA – Viking 1 Lander",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1975-075C"
+        }
+      ],
+      "documentarySource": {
+        "label": "NASA: Viking results revisited",
+        "url": "https://astrobiology.nasa.gov/news/viking-results-revisited/"
+      }
+    },
+    {
+      "id": "opportunity",
+      "name": "Opportunity (MER-B)",
+      "sources": [
+        {
+          "label": "NASA NSSDCA – Master Catalog",
+          "url": "https://nssdc.gsfc.nasa.gov/"
+        },
+        {
+          "label": "NSSDCA – Mars Exploration Rover B",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2003-032A"
+        },
+        {
+          "label": "NASA – Opportunity end-of-mission report",
+          "url": "https://ntrs.nasa.gov/citations/20200000214"
+        },
+        {
+          "label": "NASA/JPL – Opportunity mission comes to an end",
+          "url": "https://www.jpl.nasa.gov/news/nasas-opportunity-rover-mission-on-mars-comes-to-end/"
+        }
+      ],
+      "documentarySource": {
+        "label": "NASA: Opportunity’s last message",
+        "url": "https://science.nasa.gov/resource/opportunitys-last-message/"
+      }
+    },
+    {
+      "id": "ingenuity",
+      "name": "Ingenuity Mars Helicopter",
+      "sources": [
+        {
+          "label": "NASA NSSDCA – Master Catalog",
+          "url": "https://nssdc.gsfc.nasa.gov/"
+        },
+        {
+          "label": "NASA – Ingenuity Mars Helicopter",
+          "url": "https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/"
+        }
+      ],
+      "documentarySource": {
+        "label": "NASA: the damaged rotor-blade shadow",
+        "url": "https://science.nasa.gov/photojournal/ingenuity-spots-the-shadow-of-its-damaged-rotor-blade/"
+      }
+    },
+    {
+      "id": "pioneer-10",
+      "name": "Pioneer 10",
+      "sources": [
+        {
+          "label": "NASA NSSDCA – Master Catalog",
+          "url": "https://nssdc.gsfc.nasa.gov/"
+        },
+        {
+          "label": "NSSDCA – Pioneer 10",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1972-012A"
+        },
+        {
+          "label": "NASA Science – Pioneer 10",
+          "url": "https://science.nasa.gov/mission/pioneer-10/"
+        },
+        {
+          "label": "NASA JPL Horizons System",
+          "url": "https://ssd.jpl.nasa.gov/horizons/"
+        }
+      ],
+      "documentarySource": {
+        "label": "NASA: Pioneer 10 mission record",
+        "url": "https://science.nasa.gov/mission/pioneer-10/"
+      }
+    },
+    {
+      "id": "surveyor-3",
+      "name": "Surveyor 3",
+      "sources": [
+        {
+          "label": "NASA mission record",
+          "url": "https://science.nasa.gov/mission/surveyor-3/"
+        },
+        {
+          "label": "NASA image record",
+          "url": "https://images.nasa.gov/details/as12-48-7110"
+        }
+      ],
+      "documentarySource": {
+        "label": "NASA mission record",
+        "url": "https://science.nasa.gov/mission/surveyor-3/"
+      }
+    },
+    {
+      "id": "alsep",
+      "name": "ALSEP scientific stations",
+      "sources": [
+        {
+          "label": "NASA mission record",
+          "url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/HamishALSEP.html"
+        },
+        {
+          "label": "NASA image record",
+          "url": "https://images.nasa.gov/details/as12-46-6813"
+        }
+      ],
+      "documentarySource": {
+        "label": "NASA mission record",
+        "url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/HamishALSEP.html"
+      }
+    },
+    {
+      "id": "viking-2",
+      "name": "Viking 2 Lander",
+      "sources": [
+        {
+          "label": "NASA mission record",
+          "url": "https://science.nasa.gov/mission/viking-2/"
+        },
+        {
+          "label": "NASA image record",
+          "url": "https://images.nasa.gov/details/PIA00396"
+        }
+      ],
+      "documentarySource": {
+        "label": "NASA mission record",
+        "url": "https://science.nasa.gov/mission/viking-2/"
+      }
+    },
+    {
+      "id": "pioneer-11",
+      "name": "Pioneer 11",
+      "sources": [
+        {
+          "label": "NASA mission record",
+          "url": "https://science.nasa.gov/mission/pioneer-11/"
+        },
+        {
+          "label": "NASA image record",
+          "url": "https://images.nasa.gov/details/ARC-1972-AC72-1338"
+        }
+      ],
+      "documentarySource": {
+        "label": "NASA mission record",
+        "url": "https://science.nasa.gov/mission/pioneer-11/"
+      }
+    },
+    {
+      "id": "sojourner",
+      "name": "Sojourner rover",
+      "sources": [
+        {
+          "label": "NASA mission record",
+          "url": "https://science.nasa.gov/mission/mars-pathfinder/"
+        },
+        {
+          "label": "NASA image record",
+          "url": "https://images.nasa.gov/details/PIA01121"
+        }
+      ],
+      "documentarySource": {
+        "label": "NASA mission record",
+        "url": "https://science.nasa.gov/mission/mars-pathfinder/"
+      }
+    },
+    {
+      "id": "near-shoemaker",
+      "name": "NEAR Shoemaker",
+      "sources": [
+        {
+          "label": "NASA mission record",
+          "url": "https://science.nasa.gov/mission/near-shoemaker/"
+        },
+        {
+          "label": "NASA image record",
+          "url": "https://images.nasa.gov/details/PIA02900"
+        }
+      ],
+      "documentarySource": {
+        "label": "NASA mission record",
+        "url": "https://science.nasa.gov/mission/near-shoemaker/"
+      }
+    },
+    {
+      "id": "phoenix",
+      "name": "Phoenix Mars Lander",
+      "sources": [
+        {
+          "label": "NASA mission record",
+          "url": "https://science.nasa.gov/mission/mars-phoenix/"
+        },
+        {
+          "label": "NASA image record",
+          "url": "https://images.nasa.gov/details/PIA11379"
+        }
+      ],
+      "documentarySource": {
+        "label": "NASA mission record",
+        "url": "https://science.nasa.gov/mission/mars-phoenix/"
+      }
+    },
+    {
+      "id": "spirit",
+      "name": "Spirit rover",
+      "sources": [
+        {
+          "label": "NASA mission record",
+          "url": "https://science.nasa.gov/mission/mer-spirit/"
+        },
+        {
+          "label": "NASA image record",
+          "url": "https://images.nasa.gov/details/PIA05581"
+        }
+      ],
+      "documentarySource": {
+        "label": "NASA mission record",
+        "url": "https://science.nasa.gov/mission/mer-spirit/"
+      }
+    },
+    {
+      "id": "kepler",
+      "name": "Kepler Space Telescope",
+      "sources": [
+        {
+          "label": "NASA mission record",
+          "url": "https://science.nasa.gov/mission/kepler/"
+        },
+        {
+          "label": "NASA image record",
+          "url": "https://images.nasa.gov/details/PIA11188"
+        }
+      ],
+      "documentarySource": {
+        "label": "NASA mission record",
+        "url": "https://science.nasa.gov/mission/kepler/"
+      }
+    },
+    {
+      "id": "dawn",
+      "name": "Dawn spacecraft",
+      "sources": [
+        {
+          "label": "NASA mission record",
+          "url": "https://science.nasa.gov/mission/dawn/toolkit/end-of-mission/"
+        },
+        {
+          "label": "NASA image record",
+          "url": "https://images.nasa.gov/details/PIA20309"
+        }
+      ],
+      "documentarySource": {
+        "label": "NASA mission record",
+        "url": "https://science.nasa.gov/mission/dawn/toolkit/end-of-mission/"
+      }
+    },
+    {
+      "id": "insight",
+      "name": "InSight Lander",
+      "sources": [
+        {
+          "label": "NASA mission record",
+          "url": "https://www.nasa.gov/missions/insight/nasa-retires-insight-mars-lander-mission-after-years-of-science/"
+        },
+        {
+          "label": "NASA image record",
+          "url": "https://images.nasa.gov/details/PIA25287"
+        }
+      ],
+      "documentarySource": {
+        "label": "NASA mission record",
+        "url": "https://www.nasa.gov/missions/insight/nasa-retires-insight-mars-lander-mission-after-years-of-science/"
+      }
+    }
+  ],
+  "nasaImages": [
+    {
+      "nasaId": "0301627",
+      "url": "https://images.nasa.gov/details/0301627",
+      "localFiles": [
+        "public/media/maps/deep-hubble.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "pioneer-10",
+          "role": "illustrative background",
+          "label": "Hubble N49 composite, not the surroundings of Pioneer 10",
+          "credit": "NASA/MSFC (NASA Library record 0301627)"
+        }
+      ]
+    },
+    {
+      "nasaId": "9139575",
+      "url": "https://images.nasa.gov/details/9139575",
+      "localFiles": [
+        "public/media/machines/nasa-9139575.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "pioneer-11",
+          "role": "cover",
+          "label": "Atlas-Centaur launching the Pioneer G spacecraft, later named Pioneer 11.",
+          "credit": "NASA/MSFC"
+        }
+      ]
+    },
+    {
+      "nasaId": "9701593",
+      "url": "https://images.nasa.gov/details/9701593",
+      "localFiles": [
+        "public/media/machines/nasa-9701593.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "near-shoemaker",
+          "role": "cover",
+          "label": "NEAR spacecraft undergoing preflight preparation at Kennedy Space Center.",
+          "credit": "NASA/MSFC"
+        }
+      ]
+    },
+    {
+      "nasaId": "ARC-1972-AC72-1338",
+      "url": "https://images.nasa.gov/details/ARC-1972-AC72-1338",
+      "localFiles": [
+        "public/media/machines/nasa-ARC-1972-AC72-1338.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "pioneer-10",
+          "role": "gallery",
+          "label": "The plaque Pioneer 10 carries for anyone who might find it.",
+          "credit": null
+        },
+        {
+          "mission": "pioneer-10",
+          "role": "recovery scene",
+          "label": "The Pioneer 10 plaque: a message about its origin, not a device that receives replies.",
+          "credit": "Photograph of the plaque · NASA/ARC"
+        },
+        {
+          "mission": "pioneer-10",
+          "role": "documentary record",
+          "label": "The Pioneer plaque, photographed on Earth: a message about where the spacecraft came from.",
+          "credit": "NASA/ARC"
+        },
+        {
+          "mission": "pioneer-11",
+          "role": "gallery",
+          "label": "The plaque design carried by Pioneer 10 and Pioneer 11, photographed on Earth.",
+          "credit": "NASA/ARC"
+        },
+        {
+          "mission": "pioneer-11",
+          "role": "recovery scene",
+          "label": "The plaque design carried by Pioneer 10 and Pioneer 11, photographed on Earth.",
+          "credit": "Photograph of mission hardware · NASA/ARC"
+        },
+        {
+          "mission": "pioneer-11",
+          "role": "documentary record",
+          "label": "The plaque design carried by Pioneer 10 and Pioneer 11, photographed on Earth.",
+          "credit": "NASA/ARC"
+        }
+      ]
+    },
+    {
+      "nasaId": "ARC-1972-AC72-2135",
+      "url": "https://images.nasa.gov/details/ARC-1972-AC72-2135",
+      "localFiles": [],
+      "uses": [
+        {
+          "mission": "pioneer-10",
+          "role": "gallery",
+          "label": "Pioneer 10 being readied for launch at Cape Kennedy in 1972.",
+          "credit": null
+        }
+      ]
+    },
+    {
+      "nasaId": "ARC-1973-AC73-9019",
+      "url": "https://images.nasa.gov/details/ARC-1973-AC73-9019",
+      "localFiles": [
+        "public/media/machines/nasa-ARC-1973-AC73-9019.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "pioneer-10",
+          "role": "cover",
+          "label": "Final assembly of Pioneer 10 at TRW on Earth.",
+          "credit": "NASA/ARC"
+        }
+      ]
+    },
+    {
+      "nasaId": "as11-40-5902",
+      "url": "https://images.nasa.gov/details/as11-40-5902",
+      "localFiles": [
+        "public/media/machines/nasa-as11-40-5902.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "apollo-11-eagle",
+          "role": "cover",
+          "label": "Buzz Aldrin beside an Eagle landing leg, July 20, 1969.",
+          "credit": "NASA/JSC · Neil Armstrong"
+        }
+      ]
+    },
+    {
+      "nasaId": "as12-46-6813",
+      "url": "https://images.nasa.gov/details/as12-46-6813",
+      "localFiles": [
+        "public/media/machines/nasa-as12-46-6813.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "alsep",
+          "role": "gallery",
+          "label": "Alan Bean deploying the Apollo 12 lunar magnetometer, part of ALSEP.",
+          "credit": "NASA/JSC"
+        },
+        {
+          "mission": "alsep",
+          "role": "recovery scene",
+          "label": "Alan Bean deploying the Apollo 12 lunar magnetometer, part of ALSEP.",
+          "credit": "Surface photograph · NASA/JSC"
+        },
+        {
+          "mission": "alsep",
+          "role": "documentary record",
+          "label": "Alan Bean deploying the Apollo 12 lunar magnetometer, part of ALSEP.",
+          "credit": "NASA/JSC"
+        }
+      ]
+    },
+    {
+      "nasaId": "as12-47-6918",
+      "url": "https://images.nasa.gov/details/as12-47-6918",
+      "localFiles": [
+        "public/media/machines/nasa-as12-47-6918.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "alsep",
+          "role": "cover",
+          "label": "Apollo 12 ALSEP central station, seismometer and ion detector on the lunar surface.",
+          "credit": "NASA/JSC"
+        }
+      ]
+    },
+    {
+      "nasaId": "as12-48-7110",
+      "url": "https://images.nasa.gov/details/as12-48-7110",
+      "localFiles": [
+        "public/media/machines/nasa-as12-48-7110.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "surveyor-3",
+          "role": "gallery",
+          "label": "Surveyor 3 footpad and surface sampler photographed during Apollo 12.",
+          "credit": "NASA/JSC"
+        },
+        {
+          "mission": "surveyor-3",
+          "role": "recovery scene",
+          "label": "Surveyor 3 footpad and surface sampler photographed during Apollo 12.",
+          "credit": "Surface photograph · NASA/JSC"
+        },
+        {
+          "mission": "surveyor-3",
+          "role": "documentary record",
+          "label": "Surveyor 3 footpad and surface sampler photographed during Apollo 12.",
+          "credit": "NASA/JSC"
+        }
+      ]
+    },
+    {
+      "nasaId": "as12-48-7121",
+      "url": "https://images.nasa.gov/details/as12-48-7121",
+      "localFiles": [
+        "public/media/machines/nasa-as12-48-7121.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "surveyor-3",
+          "role": "cover",
+          "label": "Surveyor 3 photographed by the Apollo 12 crew on the Moon in November 1969.",
+          "credit": "NASA/JSC"
+        }
+      ]
+    },
+    {
+      "nasaId": "as15-85-11451",
+      "url": "https://images.nasa.gov/details/as15-85-11451",
+      "localFiles": [
+        "public/media/machines/nasa-as15-85-11451.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "lunar-roving-vehicle",
+          "role": "cover",
+          "label": "David Scott and the lunar rover at Hadley Rille, Apollo 15, July 31, 1971.",
+          "credit": "NASA/JSC · James Irwin"
+        }
+      ]
+    },
+    {
+      "nasaId": "as17-137-20979",
+      "url": "https://images.nasa.gov/details/as17-137-20979",
+      "localFiles": [],
+      "uses": [
+        {
+          "mission": "lunar-roving-vehicle",
+          "role": "gallery",
+          "label": "The Apollo 17 rover, with its repaired fender.",
+          "credit": null
+        }
+      ]
+    },
+    {
+      "nasaId": "KSC-07PD-0864",
+      "url": "https://images.nasa.gov/details/KSC-07PD-0864",
+      "localFiles": [
+        "public/media/machines/nasa-KSC-07PD-0864.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "dawn",
+          "role": "cover",
+          "label": "Dawn spacecraft in a clean room at Astrotech before launch.",
+          "credit": "NASA/KSC"
+        }
+      ]
+    },
+    {
+      "nasaId": "KSC-07PD-1090",
+      "url": "https://images.nasa.gov/details/KSC-07PD-1090",
+      "localFiles": [
+        "public/media/machines/nasa-KSC-07PD-1090.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "phoenix",
+          "role": "cover",
+          "label": "Phoenix lander inside its backshell during preparation on Earth.",
+          "credit": "NASA/KSC"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA00381",
+      "url": "https://images.nasa.gov/details/PIA00381",
+      "localFiles": [
+        "public/media/machines/nasa-PIA00381.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "viking-1",
+          "role": "gallery",
+          "label": "The first photograph ever taken on the surface of Mars, minutes after Viking 1 landed.",
+          "credit": null
+        },
+        {
+          "mission": "viking-1",
+          "role": "recovery scene",
+          "label": "Soil and part of a Viking 1 footpad after landing on July 20, 1976. The appearance of rocks does not confirm life.",
+          "credit": "Surface photograph · NASA/JPL"
+        },
+        {
+          "mission": "viking-1",
+          "role": "documentary record",
+          "label": "Viking 1 photographed its footpad and the nearby surface on July 20, 1976.",
+          "credit": "NASA/JPL"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA00396",
+      "url": "https://images.nasa.gov/details/PIA00396",
+      "localFiles": [
+        "public/media/machines/nasa-PIA00396.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "viking-2",
+          "role": "gallery",
+          "label": "Viking 2’s first surface picture on Mars.",
+          "credit": "NASA/JPL"
+        },
+        {
+          "mission": "viking-2",
+          "role": "recovery scene",
+          "label": "Viking 2’s first surface picture on Mars.",
+          "credit": "Surface photograph · NASA/JPL"
+        },
+        {
+          "mission": "viking-2",
+          "role": "documentary record",
+          "label": "Viking 2’s first surface picture on Mars.",
+          "credit": "NASA/JPL"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA00573",
+      "url": "https://images.nasa.gov/details/PIA00573",
+      "localFiles": [
+        "public/media/machines/nasa-PIA00573.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "viking-2",
+          "role": "cover",
+          "label": "Frost photographed at the Viking 2 landing site.",
+          "credit": "NASA/JPL"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA01121",
+      "url": "https://images.nasa.gov/details/PIA01121",
+      "localFiles": [
+        "public/media/machines/nasa-PIA01121.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "sojourner",
+          "role": "gallery",
+          "label": "Pathfinder lander seen from the Sojourner rover.",
+          "credit": "NASA/JPL"
+        },
+        {
+          "mission": "sojourner",
+          "role": "recovery scene",
+          "label": "Pathfinder lander seen from the Sojourner rover.",
+          "credit": "Surface photograph · NASA/JPL"
+        },
+        {
+          "mission": "sojourner",
+          "role": "documentary record",
+          "label": "Pathfinder lander seen from the Sojourner rover.",
+          "credit": "NASA/JPL"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA01551",
+      "url": "https://images.nasa.gov/details/PIA01551",
+      "localFiles": [
+        "public/media/machines/nasa-PIA01551.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "sojourner",
+          "role": "cover",
+          "label": "Newly deployed Sojourner rover on Mars, photographed by Pathfinder.",
+          "credit": "NASA/JPL"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA02900",
+      "url": "https://images.nasa.gov/details/PIA02900",
+      "localFiles": [
+        "public/media/machines/nasa-PIA02900.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "near-shoemaker",
+          "role": "gallery",
+          "label": "Eros’s saddle region imaged by NEAR Shoemaker.",
+          "credit": "NASA/JPL/JHUAPL"
+        },
+        {
+          "mission": "near-shoemaker",
+          "role": "recovery scene",
+          "label": "Eros’s saddle region imaged by NEAR Shoemaker.",
+          "credit": "Spacecraft image of asteroid terrain · NASA/JPL/JHUAPL"
+        },
+        {
+          "mission": "near-shoemaker",
+          "role": "documentary record",
+          "label": "Eros’s saddle region imaged by NEAR Shoemaker.",
+          "credit": "NASA/JPL/JHUAPL"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA05581",
+      "url": "https://images.nasa.gov/details/PIA05581",
+      "localFiles": [
+        "public/media/machines/nasa-PIA05581.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "spirit",
+          "role": "gallery",
+          "label": "Spirit’s route from its landing site toward Bonneville, through sol 72.",
+          "credit": "NASA/JPL/Cornell/ASU"
+        },
+        {
+          "mission": "spirit",
+          "role": "recovery scene",
+          "label": "Spirit’s route from its landing site toward Bonneville, through sol 72.",
+          "credit": "Traverse map over orbital imagery · NASA/JPL/Cornell/ASU"
+        },
+        {
+          "mission": "spirit",
+          "role": "documentary record",
+          "label": "Spirit’s route from its landing site toward Bonneville, through sol 72.",
+          "credit": "NASA/JPL/Cornell/ASU"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA09703",
+      "url": "https://images.nasa.gov/details/PIA09703",
+      "localFiles": [
+        "public/media/machines/nasa-PIA09703.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "viking-1",
+          "role": "cover",
+          "label": "Viking lander model photographed on display, not on Mars.",
+          "credit": "NASA/JPL"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA11188",
+      "url": "https://images.nasa.gov/details/PIA11188",
+      "localFiles": [
+        "public/media/machines/nasa-PIA11188.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "kepler",
+          "role": "gallery",
+          "label": "Kepler in a clean room at Ball Aerospace before its mission.",
+          "credit": "NASA/JPL-Caltech/Ball Aerospace"
+        },
+        {
+          "mission": "kepler",
+          "role": "recovery scene",
+          "label": "Kepler in a clean room at Ball Aerospace before its mission.",
+          "credit": "Pre-mission photograph · NASA/JPL-Caltech/Ball Aerospace"
+        },
+        {
+          "mission": "kepler",
+          "role": "documentary record",
+          "label": "Kepler in a clean room at Ball Aerospace before its mission.",
+          "credit": "NASA/JPL-Caltech/Ball Aerospace"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA11379",
+      "url": "https://images.nasa.gov/details/PIA11379",
+      "localFiles": [
+        "public/media/machines/nasa-PIA11379.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "phoenix",
+          "role": "gallery",
+          "label": "The Martian surface underneath the Phoenix lander.",
+          "credit": "NASA/JPL-Caltech/University of Arizona/Max Planck Institute"
+        },
+        {
+          "mission": "phoenix",
+          "role": "recovery scene",
+          "label": "The Martian surface underneath the Phoenix lander.",
+          "credit": "Surface photograph · NASA/JPL-Caltech/University of Arizona/Max Planck Institute"
+        },
+        {
+          "mission": "phoenix",
+          "role": "documentary record",
+          "label": "The Martian surface underneath the Phoenix lander.",
+          "credit": "NASA/JPL-Caltech/University of Arizona/Max Planck Institute"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA11733",
+      "url": "https://images.nasa.gov/details/PIA11733",
+      "localFiles": [
+        "public/media/machines/nasa-PIA11733.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "kepler",
+          "role": "cover",
+          "label": "Kepler spacecraft at Ball Aerospace on Earth before launch.",
+          "credit": "NASA/JPL-Caltech/Ball"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA12909",
+      "url": "https://images.nasa.gov/details/PIA12909",
+      "localFiles": [
+        "public/media/machines/nasa-PIA12909.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "apollo-11-eagle",
+          "role": "gallery",
+          "label": "The Apollo 11 landing site, seen from lunar orbit by NASA’s Lunar Reconnaissance Orbiter.",
+          "credit": null
+        },
+        {
+          "mission": "apollo-11-eagle",
+          "role": "recovery scene",
+          "label": "Apollo 11 landing site from lunar orbit, imaged by LRO. Equipment is tiny at this scale.",
+          "credit": "Orbital photograph · NASA/LRO"
+        },
+        {
+          "mission": "apollo-11-eagle",
+          "role": "documentary record",
+          "label": "Tranquility Base seen from lunar orbit. The landing hardware is tiny at this scale.",
+          "credit": "NASA/GSFC/Arizona State University"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA16442",
+      "url": "https://images.nasa.gov/details/PIA16442",
+      "localFiles": [
+        "public/media/machines/nasa-PIA16442.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "spirit",
+          "role": "cover",
+          "label": "Spirit in the McMurdo panorama, shown in polar projection in 2006.",
+          "credit": "NASA/JPL-Caltech/Cornell"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA17759",
+      "url": "https://images.nasa.gov/details/PIA17759",
+      "localFiles": [
+        "public/media/machines/nasa-PIA17759.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "opportunity",
+          "role": "cover",
+          "label": "Opportunity self-portrait assembled from January 2014 images.",
+          "credit": "NASA/JPL"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA20285",
+      "url": "https://images.nasa.gov/details/PIA20285",
+      "localFiles": [],
+      "uses": [
+        {
+          "mission": "opportunity",
+          "role": "gallery",
+          "label": "Opportunity examining a rock in Marathon Valley, 2016.",
+          "credit": null
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA20309",
+      "url": "https://images.nasa.gov/details/PIA20309",
+      "localFiles": [
+        "public/media/machines/nasa-PIA20309.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "dawn",
+          "role": "gallery",
+          "label": "Tupo Crater on Ceres, imaged by Dawn.",
+          "credit": "NASA/JPL-Caltech/UCLA/MPS/DLR/IDA"
+        },
+        {
+          "mission": "dawn",
+          "role": "recovery scene",
+          "label": "Tupo Crater on Ceres, imaged by Dawn.",
+          "credit": "Orbital photograph · NASA/JPL-Caltech/UCLA/MPS/DLR/IDA"
+        },
+        {
+          "mission": "dawn",
+          "role": "documentary record",
+          "label": "Tupo Crater on Ceres, imaged by Dawn.",
+          "credit": "NASA/JPL-Caltech/UCLA/MPS/DLR/IDA"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA22876",
+      "url": "https://images.nasa.gov/details/PIA22876",
+      "localFiles": [
+        "public/media/machines/nasa-PIA22876.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "insight",
+          "role": "cover",
+          "label": "InSight’s first full selfie, a mosaic taken on Mars in December 2018.",
+          "credit": "NASA/JPL-Caltech"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA22929",
+      "url": "https://images.nasa.gov/details/PIA22929",
+      "localFiles": [
+        "public/media/machines/nasa-PIA22929.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "opportunity",
+          "role": "documentary record",
+          "label": "June 10, 2018 · sol 5,111. An incomplete full-frame Pancam image transmitted during the dust storm.",
+          "credit": "NASA/JPL-Caltech/Cornell/ASU"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA23178",
+      "url": "https://images.nasa.gov/details/PIA23178",
+      "localFiles": [
+        "public/media/machines/nasa-PIA23178.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "opportunity",
+          "role": "gallery",
+          "label": "Opportunity’s route, ending in Perseverance Valley where it fell silent.",
+          "credit": null
+        },
+        {
+          "mission": "opportunity",
+          "role": "recovery scene",
+          "label": "Opportunity’s 45.16 km route to Perseverance Valley. The end marks last contact on June 10, 2018.",
+          "credit": "Traverse map over orbital mosaic · NASA/JPL/MSSS"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA23882",
+      "url": "https://images.nasa.gov/details/PIA23882",
+      "localFiles": [
+        "public/media/machines/nasa-PIA23882.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "ingenuity",
+          "role": "cover",
+          "label": "Ingenuity flight model photographed on Earth before the mission.",
+          "credit": "NASA/JPL"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA25080",
+      "url": "https://images.nasa.gov/details/PIA25080",
+      "localFiles": [
+        "public/media/machines/nasa-PIA25080.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "ingenuity",
+          "role": "gallery",
+          "label": "Possible flight routes for Ingenuity toward the Jezero Crater delta.",
+          "credit": null
+        },
+        {
+          "mission": "ingenuity",
+          "role": "recovery scene",
+          "label": "Possible Ingenuity routes toward the Jezero delta in March 2022. These are planned alternatives, not a record of every completed flight.",
+          "credit": "Annotated orbital image · NASA/JPL"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA25287",
+      "url": "https://images.nasa.gov/details/PIA25287",
+      "localFiles": [
+        "public/media/machines/nasa-PIA25287.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "insight",
+          "role": "gallery",
+          "label": "InSight’s final selfie in April 2022, showing accumulated dust.",
+          "credit": "NASA/JPL-Caltech"
+        },
+        {
+          "mission": "insight",
+          "role": "recovery scene",
+          "label": "InSight’s final selfie in April 2022, showing accumulated dust.",
+          "credit": "Photographic mosaic · NASA/JPL-Caltech"
+        },
+        {
+          "mission": "insight",
+          "role": "documentary record",
+          "label": "InSight’s final selfie in April 2022, showing accumulated dust.",
+          "credit": "NASA/JPL-Caltech"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA26243",
+      "url": "https://images.nasa.gov/details/PIA26243",
+      "localFiles": [
+        "public/media/machines/nasa-PIA26243.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "ingenuity",
+          "role": "documentary record",
+          "label": "After flight 72 on January 18, 2024: the shadow of a rotor blade damaged during landing.",
+          "credit": "NASA/JPL-Caltech"
+        }
+      ]
+    },
+    {
+      "nasaId": "PIA26311",
+      "url": "https://images.nasa.gov/details/PIA26311",
+      "localFiles": [],
+      "uses": [
+        {
+          "mission": "ingenuity",
+          "role": "gallery",
+          "label": "Where Ingenuity and Perseverance stood on December 19, 2023.",
+          "credit": null
+        }
+      ]
+    },
+    {
+      "nasaId": "S72-00147",
+      "url": "https://images.nasa.gov/details/S72-00147",
+      "localFiles": [
+        "public/media/machines/nasa-S72-00147.jpg"
+      ],
+      "uses": [
+        {
+          "mission": "lunar-roving-vehicle",
+          "role": "gallery",
+          "label": "The Apollo 16 landing area, with the rover routes drawn on.",
+          "credit": null
+        },
+        {
+          "mission": "lunar-roving-vehicle",
+          "role": "recovery scene",
+          "label": "Descartes landing area with Apollo 16 traverse routes and stops. Annotations describe exploration planning.",
+          "credit": "Annotated orbital image · NASA/JSC"
+        },
+        {
+          "mission": "lunar-roving-vehicle",
+          "role": "documentary record",
+          "label": "Apollo 16 traverse planning map: routes and stops around the Descartes landing area.",
+          "credit": "NASA/JSC"
+        }
+      ]
+    }
+  ],
+  "otherResources": [
+    {
+      "name": "The Moon Landing V.2",
+      "url": "https://sketchfab.com/3d-models/the-moon-landing-v2-7e310f6267e54c9da7a19b88d0b68fb1",
+      "use": "Artist-made hero model by MisterH, rendered into looping video and poster. CC BY 4.0."
+    },
+    {
+      "name": "MisterH",
+      "url": "https://sketchfab.com/TGVMisterH",
+      "use": "Hero model author attribution."
+    },
+    {
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "use": "Hero model licence. Adaptations disclosed in CREDITS.txt and beside the hero."
+    },
+    {
+      "name": "React and React DOM",
+      "url": "https://react.dev/",
+      "use": "UI runtime."
+    },
+    {
+      "name": "Vite",
+      "url": "https://vite.dev/",
+      "use": "Build and local development tooling."
+    },
+    {
+      "name": "TypeScript",
+      "url": "https://www.typescriptlang.org/",
+      "use": "Static type checking."
+    },
+    {
+      "name": "CSS Modules",
+      "url": "https://github.com/css-modules/css-modules",
+      "use": "Scoped component styles."
+    },
+    {
+      "name": "Node.js",
+      "url": "https://nodejs.org/",
+      "use": "Development runtime and native test runner."
+    },
+    {
+      "name": "ESLint",
+      "url": "https://eslint.org/",
+      "use": "Code linting."
+    },
+    {
+      "name": "typescript-eslint",
+      "url": "https://typescript-eslint.io/",
+      "use": "TypeScript linting integration."
+    },
+    {
+      "name": "React Hooks ESLint plugin",
+      "url": "https://react.dev/reference/eslint-plugin-react-hooks",
+      "use": "React hooks rules."
+    },
+    {
+      "name": "DefinitelyTyped",
+      "url": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+      "use": "Development type declarations for React, React DOM and Node."
+    },
+    {
+      "name": "Vercel",
+      "url": "https://vercel.com/docs",
+      "use": "Deployment target and function routes. The reviewed local build has not been published by this audit."
+    },
+    {
+      "name": "Baloo 2",
+      "url": "https://fontsource.org/fonts/baloo-2",
+      "use": "Legacy bundled font. SIL OFL 1.1 licence retained under public/fonts. Current terminal uses system monospace."
+    },
+    {
+      "name": "Atkinson Hyperlegible Next",
+      "url": "https://fontsource.org/fonts/atkinson-hyperlegible-next",
+      "use": "Legacy bundled font. SIL OFL 1.1 licence retained under public/fonts."
+    },
+    {
+      "name": "SIL Open Font License",
+      "url": "https://openfontlicense.org/",
+      "use": "Bundled font licence terms; the exact licence files remain in the project."
+    },
+    {
+      "name": "Claude",
+      "url": "https://www.anthropic.com/claude",
+      "use": "AI assistance with code, writing and revision. Exact model versions were not recorded."
+    },
+    {
+      "name": "OpenAI Codex",
+      "url": "https://openai.com/codex/",
+      "use": "AI assistance with implementation, writing, source selection and debugging. Exact model versions were not recorded."
+    },
+    {
+      "name": "GSAP",
+      "url": "https://gsap.com/",
+      "use": "Design reference only. No package or component copied into the current animation implementation."
+    },
+    {
+      "name": "Motion",
+      "url": "https://motion.dev/",
+      "use": "Design reference only. No package or component copied into the current animation implementation."
+    },
+    {
+      "name": "React Bits",
+      "url": "https://reactbits.dev/",
+      "use": "Design reference only. No package or component copied into the current animation implementation."
+    },
+    {
+      "name": "Uiverse",
+      "url": "https://uiverse.io/",
+      "use": "Design reference only. No package or component copied into the current animation implementation."
+    },
+    {
+      "name": "Refero",
+      "url": "https://styles.refero.design/",
+      "use": "Design reference only. No package or component copied into the current animation implementation."
+    }
+  ],
+  "suppliedAssets": [
+    {
+      "path": "public/media/unifei-logo.png",
+      "description": "UNIFEI logo supplied by the project owner, displayed unchanged. University reference does not assert sponsorship or endorsement."
+    }
+  ],
+  "notes": [
+    "Tool model versions are unknown and are not invented.",
+    "A working link is not proof of scientific validity or hackathon eligibility.",
+    "Historical NASA photographs may include original insignia. No NASA logo is used as the project identity."
+  ]
+}

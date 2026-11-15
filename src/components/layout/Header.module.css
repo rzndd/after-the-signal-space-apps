@@ -1,0 +1,21 @@
+.header { position: sticky; top: 0; z-index: 20; background: #010101; color: var(--page-ink); border-bottom: 1px solid #58340d; }
+.inner { max-width: 1320px; margin: auto; padding: 0 clamp(20px, 4vw, 56px); min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; min-height: var(--tap); text-decoration: none; flex-shrink: 0; }
+.flag { width: 18px; height: 28px; overflow: visible; }
+.name { display: flex; align-items: baseline; gap: 20px; font-size: 1.15rem; font-weight: 700; line-height: 1.25; white-space: nowrap; }
+.descriptor { font-size: .72rem; font-weight: 400; color: var(--page-soft); }
+.nav { display: flex; gap: 8px; list-style: none; padding: 0; margin: 0; }
+.nav a { display: inline-flex; align-items: center; min-height: var(--tap); padding: 8px 12px; text-decoration: none; font-size: .88rem; color: var(--page-ink); border: 1px solid transparent; border-radius: 2px; }
+.nav a:hover { background: #211403; border-color: #805015; }
+.prompt { color: var(--accent); white-space: pre; }
+@media (max-width: 1100px) { .descriptor { display: none; } }
+@media (max-width: 640px) {
+  .inner { display: grid; justify-content: stretch; gap: 0; padding: 6px 16px 0; }
+  .brand { justify-self: center; min-height: 34px; }
+  .name { font-size: 1rem; }
+  .flag { width: 14px; height: 22px; }
+  .nav { justify-content: center; gap: 8px; }
+  .nav a { font-size: .82rem; padding-inline: 14px; }
+  .prompt { display: none; }
+}
+

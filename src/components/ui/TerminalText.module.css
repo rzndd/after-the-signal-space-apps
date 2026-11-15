@@ -1,0 +1,5 @@
+.transmission { display: grid; position: relative; }
+.measure, .visible { grid-area: 1 / 1; min-width: 0; }
+.measure { visibility: hidden; pointer-events: none; user-select: none; }
+.visible { overflow-wrap: anywhere; }
+.cursor { display: inline; color: currentColor; opacity: .8; }

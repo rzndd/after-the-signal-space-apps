@@ -1,0 +1,11 @@
+/* A consistent, tactile command surface throughout the recovered archive. */
+:root { --mission-paper: #ffca84; --mission-rule: #6d4c26; --mission-control: #110d07; --mission-quiet: #c5ac8e; }
+:is([aria-label='After the Signal boot sequence'],[aria-label='Signal lost'],[aria-label='Eternal hibernation']) button,
+[aria-label='Chronological NASA mission archive'] button,
+[aria-labelledby='mission-archive-title'] > div > button {
+  border-radius: 2px;
+  transition: transform .12s ease, background-color .2s ease, border-color .2s ease;
+}
+:is([aria-label='After the Signal boot sequence'],[aria-label='Signal lost']) button:active,
+[aria-labelledby='mission-archive-title'] > div > button:active { transform: translateY(2px); }
+@media (prefers-reduced-motion: reduce) { button { transition: none; } }

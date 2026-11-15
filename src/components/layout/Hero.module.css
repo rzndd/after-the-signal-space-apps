@@ -1,0 +1,26 @@
+.hero { position: relative; isolation: isolate; overflow: hidden; background: #161b44; color: #fff6e8; display: grid; align-items: center; }
+.scene { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; }
+.star { fill: #fff6e8; opacity: .45; }
+.inner { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: center; gap: clamp(24px, 4vw, 56px); width: 100%; max-width: 1320px; margin: auto; padding: clamp(40px, 6vw, 80px) clamp(20px, 4vw, 56px); }
+.copy { position: relative; z-index: 1; min-width: 0; }
+.context { margin: 0 0 20px; font-size: .72rem; color: #cbd3ef; letter-spacing: .06em; text-transform: uppercase; }
+.title { max-width: 19ch; font-size: clamp(2.35rem, 4.15vw, 4rem); line-height: 1.12; letter-spacing: -.025em; text-shadow: none; text-wrap: balance; }
+.title span { display: block; color: #ffb347; }
+.lede { max-width: 48ch; margin: 24px 0 0; font-size: 1rem; line-height: 1.75; color: #e2e2f0; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.primary, .secondary { display: inline-flex; justify-content: center; align-items: center; min-height: 48px; padding: 12px 16px; border: 1px solid #d79950; border-radius: 2px; font: inherit; font-size: .85rem; font-weight: 700; cursor: pointer; transition: transform .18s; }
+.primary { background: #ffb347; color: #010101; }
+.secondary { background: #11132d; color: #fff6e8; border-color: #9699b2; }
+.primary:hover, .secondary:hover { transform: translateY(-2px); }
+.primary:active, .secondary:active { transform: translateY(1px); }
+.mapLink { display: inline-flex; gap: 12px; align-items: center; min-height: var(--tap); margin-top: 12px; background: transparent; border: 0; padding: 0; text-align: left; font: inherit; font-size: .85rem; color: #d5d7ec; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
+.promise { margin: 12px 0 0; max-width: 52ch; color: #cbd3ef; font-size: .8rem; line-height: 1.65; }
+@media (max-width: 760px) {
+  .inner { grid-template-columns: minmax(0, 1fr); padding: 32px 20px; gap: 12px; }
+  .title { max-width: 20ch; font-size: clamp(2.15rem, 8vw, 3.4rem); }
+  .lede { margin-top: 20px; }
+  .actions { display: grid; grid-template-columns: 1fr; margin-top: 24px; }
+  .inner > figure { margin-top: 8px; }
+}
+@media (prefers-reduced-motion: reduce) { .primary, .secondary { transition: none; } }
+

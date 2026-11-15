@@ -1,0 +1,5 @@
+.toggle { display: inline-flex; gap: 4px; padding: 4px; border: 1px solid #805015; border-radius: 2px; background: #080604; }
+.opt { min-height: 44px; padding: 8px 14px; border: 1px solid transparent; border-radius: 2px; background: transparent; color: #d7aa76; font: inherit; font-size: .8rem; font-weight: 700; cursor: pointer; }
+.on { background: #211403; color: #ffca84; border-color: #a7763e; }
+.opt:hover { color: #fff6e8; }
+

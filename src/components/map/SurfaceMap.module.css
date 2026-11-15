@@ -1,0 +1,13 @@
+.figure { margin: 0; }
+.map { position: relative; width: 100%; aspect-ratio: 4 / 3; overflow: hidden; border: 1px solid #58442d; border-radius: 4px; background: #0b0b0d; }
+.moon, .mars { position: absolute; max-width: none; object-fit: fill; filter: brightness(.8); animation: reveal .65s ease-out both; }
+.moon { width: 300%; height: 200%; left: -100%; top: -50%; }
+.mars { width: 100%; height: 100%; left: 0; top: 0; }
+.mars { filter: brightness(.88); }
+.shade { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(0deg, rgb(1 1 1 / .2), transparent 30%); }
+.connectors { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; fill: var(--flag); stroke: var(--flag); stroke-width: 1.5; }
+.caption { margin: 0; padding: 12px 0; color: #c6ae90; font-size: .72rem; line-height: 1.8; }
+.caption a { display: inline-block; min-height: var(--tap); padding-block: 8px; }
+.missing { color: #e2ba82; padding: 24px; }
+@keyframes reveal { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .moon, .mars { animation: none; } }

@@ -1,0 +1,13 @@
+.section { padding: 24px clamp(16px,3vw,30px); border: 1px solid #42423c; border-top: 0; color: #ece6d9; background: #090b0c; }
+.section h3 { font-size: clamp(1.1rem,3vw,1.5rem); line-height: 1.4; text-shadow: none; }
+.section > p { margin: 14px 0 22px; font-size: .8rem; line-height: 1.8; color: #aaa69d; max-width: 70ch; }
+.list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.record { display: grid; grid-template-columns: 90px minmax(0,1fr) 24px; gap: 18px; width: 100%; min-height: 100px; padding: 12px; border: 1px solid #45443d; background: #111512; text-align: left; cursor: pointer; }
+.record img { width: 90px; height: 100px; object-fit: cover; }
+.record > span { min-width: 0; align-self: center; }
+.record strong { display: block; font-size: 1rem; font-weight: 500; }
+.destination { display: block; font-size: .8rem; color: #e0ad70; margin-block: 6px; }
+.record small { display: block; font-size: .63rem; color: #aaa69d; line-height: 1.7; overflow-wrap: anywhere; }
+.record:hover, .record[aria-pressed="true"] { border-color: #e0ad70; background: #1c211b; }
+.arrow { color: #e0ad70; }
+@media (max-width: 480px) { .record { grid-template-columns: 56px minmax(0,1fr); gap: 12px; padding: 10px; } .record img { width: 56px; height: 80px; } .arrow { display: none; } .record strong { font-size: .87rem; } .destination { font-size: .72rem; } }

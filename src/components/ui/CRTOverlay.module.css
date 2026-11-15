@@ -1,0 +1,7 @@
+.overlay { position: fixed; inset: 0; z-index: 90; pointer-events: none; overflow: hidden; opacity: .48; }
+.overlay::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(to bottom, rgb(255 140 0 / .08) 0, rgb(255 140 0 / .08) 1px, transparent 1px, transparent 4px); mix-blend-mode: screen; animation: flicker 7s steps(1, end) infinite; }
+.overlay::after { content: ''; position: absolute; inset: 0; border-radius: 3% / 2%; box-shadow: inset 0 0 5vw rgb(1 1 1 / .6); }
+.matrix::before { background: repeating-linear-gradient(to bottom, rgb(126 255 126 / .1) 0, rgb(126 255 126 / .1) 1px, transparent 1px, transparent 4px); }
+.matrix::after { box-shadow: inset 0 0 11vw 2vw #010101, inset 0 0 2vw rgb(126 255 126 / .15); }
+@keyframes flicker { 0%, 7%, 13%, 100% { opacity: .88; } 8% { opacity: .9; } 14% { opacity: .86; } 54% { opacity: .89; } }
+@media (prefers-reduced-motion: reduce) { .overlay::before { animation: none; opacity: .72; } }
