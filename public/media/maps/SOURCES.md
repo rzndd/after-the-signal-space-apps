@@ -1,0 +1,9 @@
+# Official map backgrounds
+
+- `moon-lroc.jpg`: NASA SVS CGI Moon Kit / LRO-LROC colour mosaic. Source: https://svs.gsfc.nasa.gov/4720/ . Global source 2048×1024, with the zero meridian centred. The interface displays longitudes 60° W–60° E and latitudes 45° N–45° S. It is an overview, not a measurement product or a close-up of each piece of equipment.
+- `mars-viking.jpg`: NASA Mars Trek / USGS, Viking MDIM 2.1 colour mosaic. Source: https://trek.nasa.gov/tiles/apidoc/trekAPI.html?body=mars . The source was assembled from eight level-1 `default028mm` tiles (columns 0–3, rows 0–1), west-to-east and north-to-south. Capabilities: https://trek.nasa.gov/tiles/Mars/EQ/Mars_Viking_MDIM21_ClrMosaic_global_232m/1.0.0/WMTSCapabilities.xml . The current interface displays the complete 1024×512 global mosaic: **180° W–180° E, 90° N–90° S**. The earlier -120° to +120° crop was removed; it excluded several added mission sites.
+- `deep-hubble.jpg`: NASA Image and Video Library, ID `0301627`, Hubble composite of supernova remnant N49. Record: https://images.nasa.gov/details/0301627 . This is an illustrative atmosphere behind the Pioneer journey line. It is not a photograph of Pioneer 10's surroundings or a plotted flight path.
+
+The flags and leader lines are separate interface graphics. Moon points use the displayed lunar window; Mars points use the full 360×180-degree domain. Nearby 44px controls may be displaced for touch access; connector dots retain approximate geographic references. Five ALSEP stations and the three LRV sites are grouped into their respective records.
+
+No generative image model was used for these backgrounds. Image mosaics and composite observations should not be described as current direct photographs of every machine. The project provides source links beside the map and identifies the Pioneer background/line as illustrative.

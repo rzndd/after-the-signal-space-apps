@@ -1,0 +1,9 @@
+.tabs { display: flex; width: 100%; gap: 10px; flex-wrap: wrap; }
+.tab { flex: 1; display: inline-flex; align-items: center; justify-content: center; min-height: 54px; padding: 10px 14px; border: var(--line) solid var(--ink); border-radius: 999px; background: transparent; color: var(--ink); font-family: var(--display); font-size: clamp(.95rem, 1.5vw, 1.15rem); font-weight: 700; cursor: pointer; white-space: nowrap; transition: transform .15s, background .18s, color .18s, box-shadow .15s; }
+.tab:hover { transform: translateY(-2px); box-shadow: 0 4px 0 var(--ink); }
+.active, .active:hover { background: var(--ink); color: var(--sheet); transform: none; box-shadow: 4px 4px 0 color-mix(in srgb, var(--ink) 45%, transparent); }
+.tab:focus-visible { outline-offset: 3px; }
+@media (max-width: 420px) { .tab { padding-inline: 8px; font-size: .9rem; } }
+.tab { min-height: 48px; font-size: .95rem; border-radius: 4px; color: #d4b88e; border-color: #564531; transition: opacity .25s ease; }
+.tab:hover { transform: none; box-shadow: none; opacity: .82; }
+.active, .active:hover { background: #231a0f; color: #efd3ad; border-color: #ad8755; box-shadow: inset 0 -2px #ad8755; transform: none; opacity: 1; }

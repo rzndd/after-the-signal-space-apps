@@ -1,0 +1,28 @@
+.boot { min-height: 100dvh; display: grid; place-items: center; padding: 24px; background: var(--space-background); color: #ffb347; font-family: var(--body); outline: none; }
+.terminal { width: min(820px, 100%); padding: clamp(20px, 5vw, 48px); border: 1px solid #805015; }
+.terminal h1 { font-size: clamp(1.1rem, 3vw, 1.6rem); line-height: 1.5; }
+.note { margin-block: 12px 32px; color: #d79950; font-size: .8rem; }
+.logs { min-height: 180px; font-size: clamp(.75rem, 2vw, 1rem); overflow-wrap: anywhere; }
+.logs p { animation: reveal .2s ease-out both; }
+.command { min-height: var(--tap); padding: 12px 0; border: 0; background: transparent; color: #ffb347; font: inherit; text-align: left; cursor: pointer; }
+.command:disabled { opacity: .35; cursor: wait; }
+.safeMode { display: block; width: 100%; min-height: 44px; padding: 10px 12px; margin-bottom: 16px; border: 1px solid #805015; border-radius: 2px; background: var(--space); color: #ffca84; text-align: left; font: .8rem/1.6 var(--body); cursor: pointer; overflow-wrap: anywhere; }
+.safeMode[aria-pressed='true'] { color: #b2e8a1; border-color: #87ad7c; }
+.safeStatus { margin-block: 0 16px; font-size: .8rem; color: #b2e8a1; line-height: 1.6; }
+.audio { position: fixed; z-index: 110; top: 10px; right: 16px; min-height: var(--tap); padding: 8px 12px; border: 1px solid #805015; background: var(--space); color: #ffb347; font: .75rem var(--body); cursor: pointer; }
+.inlineAudio { min-height: var(--tap); padding: 6px; border: 1px solid #805015; color: #ffb347; background: var(--space); font: .7rem var(--body); cursor: pointer; }
+.docked { top: auto; bottom: 16px; left: 16px; right: auto; z-index: 96; }
+@media (min-width: 900px) {
+  .boot { padding: clamp(32px, 4vw, 64px); }
+  .terminal { width: min(1280px, 100%); padding: clamp(40px, 4vw, 72px); }
+  .terminal h1 { font-size: clamp(1.65rem, 2.25vw, 2.6rem); line-height: 1.35; }
+  .note { margin-block: 20px 32px; max-width: 85ch; font-size: clamp(1rem, 1.15vw, 1.15rem); }
+  .logs { min-height: 220px; font-size: clamp(1.15rem, 1.4vw, 1.45rem); }
+  .logs p { margin-bottom: 1em; }
+  .safeMode { min-height: 56px; padding: 14px 18px; margin-bottom: 24px; font-size: 1.05rem; }
+  .safeStatus { font-size: 1rem; }
+  .command { min-height: 56px; padding-block: 16px; font-size: clamp(1.1rem, 1.3vw, 1.3rem); }
+}
+@media (max-width: 640px) { .docked { bottom: calc(12px + env(safe-area-inset-bottom)); left: 12px; } }
+@keyframes reveal { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .logs p { animation: none; } }

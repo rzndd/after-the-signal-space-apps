@@ -1,0 +1,26 @@
+.screen { min-height: 100dvh; padding: 72px max(20px, calc((100vw - 1280px) / 2)) 20px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px; background: var(--space-background); color: #ffb347; outline: none; }
+.header, .footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; font-size: .75rem; line-height: 1.5; color: #d7aa76; }
+.header { padding-bottom: 12px; border-bottom: 1px solid #58340d; }
+.footer { flex-shrink: 0; align-items: center; padding-top: 12px; border-top: 1px solid #58340d; background: var(--space-background); }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; }
+.controls button { min-height: var(--tap); padding: 8px 12px; background: var(--space); border: 1px solid #805015; color: #ffca84; border-radius: 2px; font: inherit; cursor: pointer; }
+.controls button:hover { background: #211403; }
+.controls button:disabled { opacity: .45; cursor: default; }
+.screen:focus-visible { outline: 2px solid #ffb347; outline-offset: -4px; }
+@media (max-width: 800px) {
+  .screen { padding: 66px 20px 16px; gap: 12px; }
+  .header { display: grid; gap: 4px; font-size: .7rem; }
+  .footer { display: grid; font-size: .72rem; gap: 8px; }
+  .controls { display: grid; width: 100%; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+  .controls button { padding: 6px 4px; font-size: .72rem; }
+  .resumeControls { grid-template-columns: 1fr; }
+}
+
+.screen, .leaving { transition: opacity .2s ease, transform .2s ease; }
+.leaving { opacity: 0; transform: translateY(-5px); pointer-events: none; }
+.controls button { box-shadow: 0 3px 0 #281d0e; transition: transform .12s ease, background-color .2s ease, border-color .2s ease; }
+.controls button:hover { border-color: #d5a76c; }
+.controls button:active { transform: translateY(2px); box-shadow: 0 1px 0 #281d0e; }
+@media (prefers-reduced-motion: reduce) { .screen, .leaving { transition: none; } .leaving { opacity: 1; transform: none; } }
+.controls button { background: var(--mission-control, #110d07); border-color: var(--mission-rule, #6d4c26); }
+.header, .footer { color: var(--mission-quiet, #c5ac8e); }

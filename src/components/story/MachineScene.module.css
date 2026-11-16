@@ -1,0 +1,17 @@
+.scene { display: block; width: 100%; height: auto; aspect-ratio: 400 / 210; background: var(--sky-top); }
+.fill { fill: var(--machine); }
+.detail { fill: none; stroke: var(--machine-detail); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2; }
+/* elements flagged as detail but drawn as shapes keep their fill */
+.fill ellipse.detail, .fill circle.detail, .fill rect.detail { fill: none; }
+.shadow { fill: var(--space); opacity: 0.32; }
+.shadow * { fill: var(--space) !important; stroke: var(--space) !important; }
+.shadow .detail { fill: none !important; }
+.machine { animation: settle 0.7s ease-out both; }
+.pole { stroke: var(--machine); stroke-width: 3; stroke-linecap: round; }
+.pennant { fill: var(--flag); stroke: var(--machine); stroke-width: 1.6; stroke-linejoin: round; transform-box: fill-box; transform-origin: 0 50%; animation: wave 2.8s ease-in-out infinite alternate; }
+.flagWrap { transform-box: fill-box; }
+@keyframes settle { from { opacity: 0; } to { opacity: 1; } }
+@keyframes wave { from { transform: rotate(-4deg) skewY(-3deg); } to { transform: rotate(4deg) skewY(3deg); } }
+
+.machine { stroke: var(--machine-detail); stroke-width: 1.1px; stroke-linejoin: round; stroke-linecap: round; }
+.pennant { animation: none; }

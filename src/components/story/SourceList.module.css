@@ -1,0 +1,5 @@
+.sources { margin-top: 24px; font-size: 0.92rem; max-width: 62ch; }
+.sources h3 { font-size: 1.05rem; margin-bottom: 6px; }
+.sources ul { margin: 0; padding-left: 1.1em; }
+.sources li { margin-bottom: 4px; overflow-wrap: anywhere; }
+.sources a { color: var(--plaque-ink); }

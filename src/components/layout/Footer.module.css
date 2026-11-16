@@ -1,0 +1,26 @@
+.footer { scroll-margin-top: 72px; background: var(--space-background); color: var(--page-soft); font-size: .9rem; border-top: var(--line) solid var(--mission-rule); }
+.wrap { max-width: 1440px; margin: auto; padding: clamp(56px, 7vw, 96px) clamp(20px, 4vw, 64px) calc(24px + env(safe-area-inset-bottom)); }
+.statement { font-family: var(--display); font-weight: 800; font-size: clamp(2rem, 4.5vw, 4rem); color: var(--page-ink); line-height: 1.12; margin: 0 0 56px; max-width: 24ch; }
+.statement em { font-style: normal; color: var(--sun); }
+.cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.cols section { background: var(--space-background); border: var(--line) solid var(--mission-rule); border-radius: var(--radius); padding: 24px; min-width: 0; box-shadow: none; }
+.footer h2 { font-size: 1.2rem; color: var(--sun); margin: 0 0 16px; }
+.footer h3 { font-size: 1rem; color: var(--page-ink); margin: 20px 0 12px; }
+.footer .team { list-style: none; padding: 0; overflow-wrap: anywhere; }
+.university { display: flex; align-items: center; gap: 16px; min-width: 0; }
+.university img { display: block; width: clamp(56px, 6vw, 80px); height: auto; flex-shrink: 0; object-fit: contain; }
+.university p { margin: 0; min-width: 0; overflow-wrap: anywhere; color: var(--page-ink); line-height: 1.5; }
+.university span { display: block; margin-top: 4px; color: var(--page-soft); font-size: .8rem; }
+.footer ul { margin: 0; padding-left: 1.1em; }
+.footer li { margin-bottom: 12px; }
+.footer a { color: var(--page-ink); text-decoration-thickness: 1px; }
+.cols a { display: inline-block; min-height: var(--tap); padding-block: 8px; }
+.footer a:hover { text-decoration-thickness: 2px; color: var(--sun); }
+.footer p { max-width: 52ch; }
+.base { margin-top: 56px; padding-top: 20px; border-top: 2px dashed #3c3e7e; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px 24px; }
+.brand { margin: 0; font-family: var(--display); font-weight: 800; color: var(--page-ink); font-size: 1.6rem; }
+.brand span { display: block; font-family: var(--body); font-weight: 400; color: var(--page-soft); font-size: .8rem; }
+.links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 8px; }
+.links li { margin: 0; }
+.links a { display: inline-flex; align-items: center; min-height: var(--tap); padding-inline: 10px; font-family: var(--display); font-weight: 700; }
+@media (max-width: 800px) { .cols { grid-template-columns: 1fr; gap: 20px; } .statement { margin-bottom: 36px; } .base { margin-top: 40px; } }

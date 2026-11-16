@@ -1,0 +1,15 @@
+.section { margin-top: 26px; max-width: 62ch; }
+.heading { font-size: 1.15rem; margin-bottom: 4px; }
+.figure { margin: 18px 0 0; padding: 10px 10px 8px; background: var(--space); border: var(--line) solid var(--plaque-ink); border-radius: var(--radius-sm); box-shadow: 5px 5px 0 color-mix(in srgb, var(--plaque-ink) 30%, transparent); transform: rotate(-0.8deg); }
+.figure:nth-of-type(even) { transform: rotate(0.8deg); }
+.img { width: 100%; height: auto; max-height: 360px; object-fit: contain; display: block; border-radius: 8px; background: var(--sheet-2); }
+.skeletonWrap { margin-top: 26px; max-width: 62ch; display: flex; flex-direction: column; gap: 10px; }
+.skeletonTitle { height: 18px; width: 45%; border-radius: 10px; background: linear-gradient(110deg, var(--sheet-2) 30%, var(--sheet) 50%, var(--sheet-2) 70%); background-size: 200% 100%; animation: sheen 1.4s linear infinite; }
+.skeleton { height: 180px; border-radius: var(--radius-sm); background: linear-gradient(110deg, var(--sheet-2) 30%, var(--sheet) 50%, var(--sheet-2) 70%); background-size: 200% 100%; animation: sheen 1.4s linear infinite; }
+.missing { margin: 20px 0 0; font-size: 0.9rem; color: var(--plaque-soft); }
+.retry { min-height: var(--tap); background: none; border: var(--line) solid var(--plaque-ink); color: var(--plaque-ink); padding: 4px 16px; border-radius: 999px; cursor: pointer; font-family: var(--display); font-size: 0.9rem; font-weight: 700; margin-left: 4px; }
+.retry:hover { background: var(--plaque-ink); color: var(--plaque); }
+.caption { margin: 10px 2px 0; font-size: 0.88rem; color: var(--plaque-soft); line-height: 1.5; }
+.label { color: var(--plaque-ink); font-weight: 700; }
+.caption a { color: var(--plaque-ink); }
+@keyframes sheen { to { background-position-x: -200%; } }

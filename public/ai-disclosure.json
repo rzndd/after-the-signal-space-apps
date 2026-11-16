@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "project": "After the Signal",
+  "language": "en",
+  "updated": "2026-11-15",
+  "disclosureType": "Project-specific AI assistance and provenance record",
+  "team": [
+    "Enrico Gaspar Rezende Campos",
+    "Alan Flávio de Albuquerque Ferreira",
+    "Luis Otavio Coelho de Azevedo"
+  ],
+  "tools": [
+    {
+      "name": "Claude",
+      "provider": "Anthropic",
+      "url": "https://www.anthropic.com/claude",
+      "modelVersion": null,
+      "role": "AI assistance with code, CSS, fictional narrative drafting and iterative revision."
+    },
+    {
+      "name": "OpenAI Codex",
+      "provider": "OpenAI",
+      "url": "https://openai.com/codex/",
+      "modelVersion": null,
+      "role": "AI assistance with implementation, source and image selection, narrative revision, debugging, checks and documentation."
+    }
+  ],
+  "versionNote": "Exact model versions were not consistently recorded. Null means unknown, not a claim that no AI was used.",
+  "humanContribution": "The project owner supplied the concept, assets, design direction, requirements and iterative feedback. Team membership does not assign unverified individual production roles.",
+  "contentCategories": [
+    {
+      "category": "Source code and interface graphics",
+      "paths": ["src/", "api/", "shared/", "scripts/", "index.html", "public/favicon.svg"],
+      "aiAssisted": true,
+      "description": "React/TypeScript/JavaScript, CSS, generic SVG flags, decorative curves, terminal effects and animation logic include AI-assisted code. These interface graphics are not NASA scientific products or official NASA branding."
+    },
+    {
+      "category": "Narration and editorial descriptions",
+      "paths": ["src/data/machines.ts", "src/data/expandedMissions.ts", "src/data/timeline.js", "src/data/learning.ts", "src/data/lastRecords.ts"],
+      "aiAssisted": true,
+      "description": "First-person narratives, terminal logs, image descriptions and explanations include AI-assisted writing based on linked mission records. Narratives and the emergency are fictional. They are not spacecraft transcripts."
+    },
+    {
+      "category": "Scientific reference data and modeled values",
+      "paths": ["src/data/", "api/horizons.ts", "api/comms-delay.ts", "api/mars-weather.ts", "shared/horizons.ts"],
+      "aiAssisted": true,
+      "description": "AI assisted curation and interpretation code, not the creation of NASA observations. Mission facts reference NASA sources. Horizons results are dated model calculations, weather is archival, and fallback values are labelled references or historical examples. The battery and thermal emergency are simulated interface values."
+    },
+    {
+      "category": "Terminal audio",
+      "paths": ["src/lib/terminalAudio.ts"],
+      "aiAssisted": true,
+      "description": "Native Web Audio oscillators synthesize fictional drone and terminal sounds through AI-assisted code. No recorded spacecraft audio or generative speech model is used. Speech synthesis was removed."
+    },
+    {
+      "category": "NASA documentary images and mosaics",
+      "paths": ["public/media/machines/nasa-*.jpg", "public/media/maps/"],
+      "generativeImageModelUsed": false,
+      "description": "Documentary NASA records, including pre-mission photographs, composites, planning maps and surface/orbital imagery. AI assisted selection and captioning. Compression, cropping, map assembly and display filters do not turn these assets into direct observations of a machine's current condition. Individual record links and credits are retained.",
+      "references": "/references.json"
+    },
+    {
+      "category": "Hero video and poster",
+      "paths": ["public/media/hero-rotation.mp4", "public/media/hero-rotation-mobile.mp4", "public/media/hero-poster.webp"],
+      "generativeImageOrVideoModelUsed": false,
+      "description": "Artist-made model rendered to looping video and poster, compressed and composited. The baked blue background was keyed and replaced with the shared #060910 space background through AI-assisted processing code. Illustrative and not to scale. It is not a NASA photograph.",
+      "title": "The Moon Landing V.2",
+      "author": "MisterH",
+      "source": "https://sketchfab.com/3d-models/the-moon-landing-v2-7e310f6267e54c9da7a19b88d0b68fb1",
+      "authorUrl": "https://sketchfab.com/TGVMisterH",
+      "license": "CC-BY-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "category": "University logo",
+      "paths": ["public/media/unifei-logo.png"],
+      "description": "Supplied by the project owner and displayed unchanged. Reference to the Federal University of Itajubá (UNIFEI) does not assert institutional sponsorship or endorsement."
+    }
+  ],
+  "verificationLimits": [
+    "Source-based editorial review and software checks do not constitute independent expert validation, a learning-outcome study or hackathon eligibility certification.",
+    "No NASA logo is used as the project identity. Original insignia may occur within credited historical documentary photographs.",
+    "The source package has no project-wide open-source licence. Third-party terms remain applicable.",
+    "This record covers the active implementation and identified media, not an assertion about the provenance of every unused legacy asset."
+  ],
+  "referenceInventory": "/references.json",
+  "humanReadableCredits": "/media/CREDITS.txt"
+}
