@@ -1,8 +1,8 @@
-.hud { position: fixed; z-index: 95; right: 20px; bottom: 16px; display: grid; gap: 4px; min-width: 150px; padding: 10px 12px; border: 1px solid #805015; background: #010101; color: #d2ae83; font-size: .65rem; line-height: 1.4; pointer-events: none; text-shadow: none; }
+.hud { position: fixed; z-index: 95; right: 20px; bottom: 16px; display: grid; gap: 4px; min-width: 150px; padding: 10px 12px; border: 1px solid #805015; background: #060910; color: #d2ae83; font-size: .65rem; line-height: 1.4; pointer-events: none; text-shadow: none; }
 .hud strong { color: #ffca84; font-size: 1.3rem; line-height: 1; }
 .data { pointer-events: auto; }
 .data summary { display: grid; place-items: center; min-height: 44px; min-width: 44px; border: 1px solid #805015; cursor: pointer; font-size: .65rem; }
-.panel { position: absolute; right: 0; bottom: calc(100% + 12px); width: min(420px, calc(100vw - 24px)); max-height: calc(100dvh - 120px); overflow: auto; padding: 20px; border: 1px solid #805015; background: #010101; font-size: .8rem; line-height: 1.8; }
+.panel { position: absolute; right: 0; bottom: calc(100% + 12px); width: min(420px, calc(100vw - 24px)); max-height: calc(100dvh - 120px); overflow: auto; padding: 20px; border: 1px solid #805015; background: #060910; font-size: .8rem; line-height: 1.8; }
 .panel h2 { font-size: 1rem; margin-bottom: 16px; }
 .panel strong { font-size: 1rem; }
 .panel a { display: inline-flex; align-items: center; min-height: 44px; }

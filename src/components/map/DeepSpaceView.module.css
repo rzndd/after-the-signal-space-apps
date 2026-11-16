@@ -12,7 +12,7 @@
 .recover:active { transform: translateY(1px); }
 .fileNote { color: #9d9d92; font-size: .6rem; line-height: 1.8; letter-spacing: .08em; margin: 30px 0 0; }
 .photograph { margin: 0; min-width: 0; transform: rotate(2deg); }
-.photoFrame { position: relative; border: 8px solid #c9c1ac; background: #252825; box-shadow: 6px 8px 0 #010101; }
+.photoFrame { position: relative; border: 8px solid #c9c1ac; background: #252825; box-shadow: 6px 8px 0 #060910; }
 .photoFrame img { display: block; width: 100%; height: clamp(320px, 34vw, 430px); object-fit: cover; object-position: 50% 46%; }
 .photoIndex { position: absolute; left: 12px; bottom: 12px; padding: 8px 10px; color: #e7e0d0; background: #121412; font-size: .58rem; line-height: 1.5; }
 .photograph figcaption { padding: 16px 4px 0; color: var(--deep-text); font-size: .9rem; line-height: 1.6; }

@@ -1,4 +1,4 @@
-.archive { min-height: 100dvh; padding: clamp(24px, 6vw, 80px) clamp(20px, 5vw, 64px); background: #010101; color: #ffb347; font-family: var(--body); }
+.archive { min-height: 100dvh; padding: clamp(24px, 6vw, 80px) clamp(20px, 5vw, 64px); background: #060910; color: #ffb347; font-family: var(--body); }
 .record { max-width: 850px; margin: auto; }
 .meta { color: #e7993c; font-size: .75rem; letter-spacing: .06em; }
 .record h1 { font-size: clamp(1.15rem, 3vw, 1.9rem); line-height: 1.5; overflow-wrap: anywhere; }

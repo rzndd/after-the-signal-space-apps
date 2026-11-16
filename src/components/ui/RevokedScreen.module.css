@@ -1,4 +1,4 @@
-.screen { min-height: 100dvh; display: grid; place-items: center; padding: 24px; background: #010101; color: #c8c8c8; font: 1rem/1.8 var(--body); text-shadow: none; overflow-wrap: anywhere; }
+.screen { min-height: 100dvh; display: grid; place-items: center; padding: 24px; background: #060910; color: #c8c8c8; font: 1rem/1.8 var(--body); text-shadow: none; overflow-wrap: anywhere; }
 .screen p { margin: 0; }
 .screen > div { max-width: 50ch; }
 .screen .note { margin-top: 18px; font-size: .85rem; color: #a7a7a0; }

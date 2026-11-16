@@ -3,10 +3,10 @@
 .objective p { max-width: 64ch; font-size: .9rem; line-height: 1.8; margin: 12px 0 0; }
 .objective .label { margin: 0 0 12px; font-size: .7rem; color: #d79950; }
 .objective .status { color: #b2e8a1; font-size: .8rem; }
-.objective button { align-self: center; min-height: var(--tap); padding: 12px; background: #010101; color: #ffb347; font: inherit; border: 1px solid #805015; cursor: pointer; }
+.objective button { align-self: center; min-height: var(--tap); padding: 12px; background: #060910; color: #ffb347; font: inherit; border: 1px solid #805015; cursor: pointer; }
 .objective button:disabled { color: #b2e8a1; cursor: default; }
 .packet { grid-column: 1/-1; position: relative; padding: 16px; overflow: hidden; font-size: .8rem; color: #cda678; background: repeating-linear-gradient(0deg, #0a0804 0 4px, #21170a 4px 5px); }
-.packet span { position: absolute; inset: 0; background: #010101; animation: loss 3s steps(1) infinite; pointer-events: none; }
+.packet span { position: absolute; inset: 0; background: #060910; animation: loss 3s steps(1) infinite; pointer-events: none; }
 @keyframes loss { 0%, 70%, 100% { opacity: 0; transform: translateX(100%); } 72%, 78% { opacity: .8; transform: translateX(0); } }
 @media (max-width: 700px) { .objective { grid-template-columns: 1fr; margin: 20px; } .objective button { justify-self: start; } }
 @media (prefers-reduced-motion: reduce) { .packet span { animation: none; opacity: .1; } }

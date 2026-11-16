@@ -33,7 +33,7 @@
 .theme { color: #b2e8a1; font-size: .7rem; text-transform: uppercase; letter-spacing: .04em; }
 .hook { font-size: .85rem; line-height: 1.6; }
 .go { display: grid; place-items: center; width: 36px; height: 36px; flex-shrink: 0; border: 1px solid #805015; border-radius: 2px; }
-.opened { position: absolute; top: 12px; right: 12px; padding: 5px 8px; background: #010101; color: #ffca84; border: 1px solid #805015; font-size: .7rem; }
+.opened { position: absolute; top: 12px; right: 12px; padding: 5px 8px; background: #060910; color: #ffca84; border: 1px solid #805015; font-size: .7rem; }
 .distance { display: grid; grid-template-columns: .7fr 1.3fr; gap: 32px; margin-top: 32px; border-block: 1px solid #58340d; padding-block: 24px; }
 .distanceTitle { font-size: 1.4rem; color: #ffca84; }
 .live { font-size: .9rem; line-height: 1.8; color: #d2ae83; margin: 0; }

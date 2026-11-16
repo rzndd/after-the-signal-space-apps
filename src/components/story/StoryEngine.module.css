@@ -1,7 +1,7 @@
-.screen { min-height: 100dvh; padding: 72px max(20px, calc((100vw - 1280px) / 2)) 20px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px; background: #010101; color: #ffb347; outline: none; }
+.screen { min-height: 100dvh; padding: 72px max(20px, calc((100vw - 1280px) / 2)) 20px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px; background: #060910; color: #ffb347; outline: none; }
 .header, .footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; font-size: .75rem; line-height: 1.5; color: #d7aa76; }
 .header { padding-bottom: 12px; border-bottom: 1px solid #58340d; }
-.footer { flex-shrink: 0; align-items: center; padding-top: 12px; border-top: 1px solid #58340d; background: #010101; }
+.footer { flex-shrink: 0; align-items: center; padding-top: 12px; border-top: 1px solid #58340d; background: #060910; }
 .controls { display: flex; flex-wrap: wrap; gap: 8px; }
 .controls button { min-height: var(--tap); padding: 8px 12px; background: #0b0804; border: 1px solid #805015; color: #ffca84; border-radius: 2px; font: inherit; cursor: pointer; }
 .controls button:hover { background: #211403; }

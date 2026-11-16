@@ -1,4 +1,4 @@
-.header { position: sticky; top: 0; z-index: 20; background: #010101; color: var(--page-ink); border-bottom: 1px solid #58340d; }
+.header { position: sticky; top: 0; z-index: 20; background: #060910; color: var(--page-ink); border-bottom: 1px solid #58340d; }
 .inner { max-width: 1320px; margin: auto; padding: 0 clamp(20px, 4vw, 56px); min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; min-height: var(--tap); text-decoration: none; flex-shrink: 0; }
 .flag { width: 18px; height: 28px; overflow: visible; }

@@ -1,4 +1,4 @@
-.screen { min-height: 100dvh; padding: clamp(80px, 12dvh, 140px) clamp(20px, 7vw, 100px) 40px; background: #010101; color: #ffca84; }
+.screen { min-height: 100dvh; padding: clamp(80px, 12dvh, 140px) clamp(20px, 7vw, 100px) 40px; background: #060910; color: #ffca84; }
 .screen h1 { max-width: 35ch; min-height: 4.5em; font-size: clamp(1.35rem, 3.4vw, 3rem); line-height: 1.5; outline: none; }
 .screen p { max-width: 70ch; line-height: 1.8; }
 .meta { font-size: .7rem; color: #d2ae83; }

@@ -5,7 +5,7 @@
   --body: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
   --tap: 44px;
   /* page chrome: a deep storybook night, the same in every world */
-  --page: #010101;
+  --page: #060910;
   --page-2: #080604;
   --page-ink: #ffb347;
   --page-soft: #d79950;
@@ -27,7 +27,7 @@
   --plaque: #0b0804;
   --plaque-ink: #ffb347;
   --plaque-soft: #d79950;
-  --sky-top: #010101;
+  --sky-top: #060910;
   --sky-bottom: #130d05;
   --ground: #1c1208;
   --ground-dark: #3a240e;
@@ -73,13 +73,22 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
-html { scrollbar-color: #805015 #010101; scrollbar-width: thin; }
+html { scrollbar-color: #805015 #060910; scrollbar-width: thin; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 body {
   margin: 0;
   min-height: 100dvh;
-  background: #010101;
+  background:
+    radial-gradient(1.2px 1.2px at 20% 30%, rgba(255,179,71,0.15), transparent),
+    radial-gradient(1px 1px at 40% 70%, rgba(255,255,255,0.08), transparent),
+    radial-gradient(1.5px 1.5px at 60% 20%, rgba(255,179,71,0.12), transparent),
+    radial-gradient(0.8px 0.8px at 80% 60%, rgba(255,255,255,0.06), transparent),
+    radial-gradient(1px 1px at 10% 80%, rgba(255,179,71,0.1), transparent),
+    radial-gradient(1.3px 1.3px at 70% 45%, rgba(255,255,255,0.07), transparent),
+    radial-gradient(0.9px 0.9px at 50% 90%, rgba(255,140,0,0.08), transparent),
+    radial-gradient(1.1px 1.1px at 30% 50%, rgba(255,255,255,0.05), transparent),
+    #060910;
   color: var(--page-ink);
   font-family: var(--body);
   font-size: clamp(1rem, 0.35vw + 0.95rem, 1.15rem);

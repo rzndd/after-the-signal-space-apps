@@ -28,9 +28,9 @@
 .introText { max-width: 65ch; font-size: 1rem; line-height: 1.75; }
 .mapCol { width: 100%; max-width: 960px; margin-inline: auto; }
 .storyCol:has(.storyEmpty) { display: none; }
-.exitExperience { position: fixed; z-index: 111; top: 10px; left: 20px; min-height: var(--tap); padding: 8px 12px; border: 1px solid #805015; background: #010101; color: #ffb347; font: .75rem var(--body); cursor: pointer; }
+.exitExperience { position: fixed; z-index: 111; top: 10px; left: 20px; min-height: var(--tap); padding: 8px 12px; border: 1px solid #805015; background: #060910; color: #ffb347; font: .75rem var(--body); cursor: pointer; }
 .sharedRecord { max-width: 900px; margin: 24px auto; padding: 20px; color: #ffb347; border: 1px solid #805015; }
-.sharedRecord button { min-height: var(--tap); padding: 10px; margin: 6px; background: #010101; color: #ffb347; border: 1px solid #805015; font: inherit; cursor: pointer; }
+.sharedRecord button { min-height: var(--tap); padding: 10px; margin: 6px; background: #060910; color: #ffb347; border: 1px solid #805015; font: inherit; cursor: pointer; }
 .mapPanel { animation: worldArrives .32s ease-out both; }
 @keyframes worldArrives { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .mapPanel { animation: none; } }
