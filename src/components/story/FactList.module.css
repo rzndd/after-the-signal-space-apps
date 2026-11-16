@@ -1,5 +1,0 @@
-.facts { margin: 22px 0 0; max-width: 62ch; padding: 6px 18px; background: color-mix(in srgb, var(--plaque-ink) 6%, var(--plaque)); border: 2px solid var(--plaque-ink); border-radius: var(--radius-sm); }
-.row { display: grid; grid-template-columns: minmax(104px, 32%) 1fr; gap: 14px; padding: 10px 0; border-bottom: 2px dashed color-mix(in srgb, var(--plaque-ink) 30%, transparent); }
-.row:last-child { border-bottom: 0; }
-.row dt { color: var(--plaque-soft); font-size: 0.9rem; font-weight: 700; }
-.row dd { margin: 0; font-weight: 700; font-size: 0.98rem; }

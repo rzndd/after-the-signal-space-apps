@@ -1,7 +1,0 @@
-.screen { min-height: 100dvh; display: grid; place-items: center; padding: 24px; background: #060910; color: #c8c8c8; font: 1rem/1.8 var(--body); text-shadow: none; overflow-wrap: anywhere; }
-.screen p { margin: 0; }
-.screen > div { max-width: 50ch; }
-.screen .note { margin-top: 18px; font-size: .85rem; color: #a7a7a0; }
-.screen button { min-height: 48px; margin-top: 24px; padding: 12px 18px; border: 1px solid #9b805d; background: #110d07; color: #ffca84; font: inherit; cursor: pointer; }
-.screen button:hover { background: #241a0d; }
-
